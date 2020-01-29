@@ -1,0 +1,9 @@
+<form [formGroup] ="reactiveForm" (ngSubmit)= "onSubmit()" class='style'> 
+    <label>
+        Name :
+        <input type="text" formControlName = "firstname"/>
+    </label> 
+    <br>
+    <button type="Submit" [disabled]="!reactiveForm.valid">Submit</button>
+
+</form>
